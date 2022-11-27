@@ -1,0 +1,27 @@
+<html>
+    <head>
+        This is our Header <br>
+           This is GUI for Cancer_surgery_survival using Random_forest
+    </head>
+    <body>
+        <h3> ---Hello---       .</h3>
+        <!--<form method = 'post', action="\data">-->
+            <form action="{{ url_for('result')}}"method="post">
+            <label> &nbsp Age </label> <br>
+            <input type="number", name="age", placeholder="Enter age",required='required'><br><br>
+            <label> Year</label><br>
+            <input type = 'number', name ="year", placeholder="Enter year", required="required"><br><br>
+            <label>Nodes</label><br>
+            <input type = "number", name="node", placeholder="Enter Nodes", required="required"><br><br>
+            <!--<input type="submit"> another method to crrate submit button-->
+            <!--the variable name should be same as given in original dataframe. i.e. if we write name='years'. It will give error -->
+
+            <button>Submit</button>
+            {{result}}
+
+
+
+        </form>
+
+    </body>
+</html>
